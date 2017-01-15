@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.soda.scrollertest.MainActivity">
+    <com.soda.scrollertest.scroller.MyRelativeLayout
+        android:id="@+id/layout"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="#123456"/>
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:onClick="left"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="left"/>
+
+        <Button
+            android:layout_marginLeft="80dp"
+            android:id="@+id/btn_up"
+            android:onClick="up"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="up"/>
+
+        <Button
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="100dp"
+            android:onClick="down"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="down"/>
+
+        <Button
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="50dp"
+            android:onClick="right"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="right"/>
+
+
+
+    </com.soda.scrollertest.scroller.MyRelativeLayout>
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="reset"
+        android:onClick="reset"/>
+</RelativeLayout>
